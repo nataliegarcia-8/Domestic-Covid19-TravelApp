@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="assets/bulma.css">
     <title>The Masked Wanderer</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/facemask.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
 </head>
 <body>
     <section class="section has-background-info">
@@ -15,40 +18,37 @@
             THE MASKED WANDERER
           </h1>
           <p class="subtitle">
-            Real Time Coronavirus Info + Cheapest Domestic Flights
+            Real Time Coronavirus Info + Cheapest Roundtrip Flights
           </p>
         </div>
       </section>
       <div class="container">
           <form class="columns">
       <div class="field column">
-        <label class="label" for="">Departure</label>
+        <label class="label" for="">Departure Airport</label>
         <div class="control">
-          <input class="input" type="text" name="field-name" placeholder="Enter a city...">
+          <input class="input" id="departingCity" type="text" name="field-name" placeholder="E.g. ATL">
         </div>
+      
       </div>
       <div class="field column">
-        <label class="label" for="">Arrival</label>
+        <label class="label" for="">Destination Airport</label>
         <div class="control">
-          <input class="input" type="text" name="field-name" placeholder="Enter a city...">
+          <input class="input" id="arrivalCity" type="text" name="field-name" placeholder="E.g. LAX">
+        </div>
         </div>
         </form>
       </div>
+      
       <div class="field is-grouped is-grouped-centered">
         <p class="control">
-          <a class="button is-primary">
+          <a class="button is-primary" onclick="enterdata()" id="search">
             Submit
           </a>
-        </p>
-        <p class="control">
-          <a class="button is-light">
-            Cancel
-          </a>
-        </p>
       </div>
     </div>
-      
+    <script src="assets/script.js"></script>
+
 </body>
-<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-<script src="assets/script.js"></script>
+
 </html>
