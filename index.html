@@ -8,10 +8,19 @@
     <title>The Masked Wanderer</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/facemask.png">
 </head>
+
+<!-- <style>
+html {    
+background: linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background-attachment: fixed;
+height: 100%;
+}
+</style> -->
+
 <body>
     <section class="section has-background-info">
         <div class="container has-text-centered">
-          <h1 class="title">
+          <h1 class="title is-1">
             THE MASKED WANDERER
           </h1>
           <p class="subtitle">
@@ -19,8 +28,8 @@
           </p>
         </div>
       </section>
-      <div class="container">
-          <form class="columns">
+      <div class="container pt-5">
+          <form class="columns card">
       <div class="field column">
         <label class="label" for="">Departure</label>
         <div class="control">
@@ -33,19 +42,15 @@
           <input class="input" type="text" name="field-name" placeholder="Enter a city...">
         </div>
         </form>
+        <div class="field is-centered">
+            <p class="control">
+              <a class="button is-primary">
+                Submit
+              </a>
+            </p>
+          </div>
       </div>
-      <div class="field is-grouped is-grouped-centered">
-        <p class="control">
-          <a class="button is-primary">
-            Submit
-          </a>
-        </p>
-        <p class="control">
-          <a class="button is-light">
-            Cancel
-          </a>
-        </p>
-      </div>
+
     </div>
       
 </body>
