@@ -1,5 +1,4 @@
 
-
 function enterdata() {
     const arrCity = document.getElementById("arrivalCity").value.toUpperCase();
     const depCity = document.getElementById("departingCity").value.toUpperCase();
