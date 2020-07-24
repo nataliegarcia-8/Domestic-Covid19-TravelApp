@@ -1,13 +1,7 @@
-//DOM ELEMENTS
-
-
-// var arrCity= $("#arrivalCity").val();
-// var depCity= $("#departingCity").val();
-// var depDate= $("#departureDate").val();
 
 function enterdata() {
-    const arrCity = document.getElementById("arrivalCity").value;
-    const depCity = document.getElementById("departingCity").value;
+    const arrCity = document.getElementById("arrivalCity").value.toUpperCase();
+    const depCity = document.getElementById("departingCity").value.toUpperCase();
 
     var settings = {
     "async": true,
@@ -21,9 +15,10 @@ function enterdata() {
         }
     }
 
-    $.ajax(settings).done(function (response) {
-        localStorage.setItem("cheapestflight", JSON.stringify(response.data.LAX[0]));
 
+    $.ajax(settings).done(function (response) {
+        localStorage.setItem("cheapestflight", JSON.stringify(response.data[arrCity][0]));
+        
         return window.location.assign("results.html");
         
     });
@@ -37,7 +32,7 @@ function enterdata() {
 var settings = {
     "async": true,
     "crossDomain": true,
-    "url": "https://covid-19-statistics.p.rapidapi.com/reports?region_province=Alabama&iso=USA&region_name=US&city_name=Autauga&date=2020-04-16&q=US%20Alabama",
+    "url": "https://covid-19-statistics.p.rapidapi.com/reports?&iso=USA&region_name=US&city_name=Atlanta&date=2020-04",
     "method": "GET",
     "headers": {
         "x-rapidapi-host": "covid-19-statistics.p.rapidapi.com",
