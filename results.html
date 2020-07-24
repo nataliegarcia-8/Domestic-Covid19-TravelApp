@@ -8,6 +8,7 @@
     <title>The Masked Wanderer</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/facemask.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="assets/script.js"></script>
    
@@ -15,8 +16,8 @@
 <body>
     <section class="section has-background-info">
         <div class="container has-text-centered">
-          <h1 class="title">
-            THE MASKED WANDERER
+          <h1 class="title is-1" style="font-family: 'Montserrat', sans-serif;">
+          MASKED WANDERER
           </h1>
           <p class="subtitle">
             Real Time Coronavirus Info + Cheapest Domestic Flights
@@ -24,8 +25,10 @@
         </div>
       </section>
 
+      <div class="columns mt-6 mr-4 ml-4">
+        <div class="column">
       <!-- Cheapest Flight -->
-      <article class="panel is-link">
+      <article class="panel is-info">
         <p class="panel-heading">
           Most Affordable Flight
         </p>
@@ -49,12 +52,45 @@
           </a>
           <a class="panel-block">
             <span class="panel-icon">
-              <i class="fab fa-usd" aria-hidden="true"></i>
+              <i class="fa fa-usd" aria-hidden="true"></i>
             </span>
             Price: $ <p id="price"></p>
           </a>
       </article>
-
+        </div>
+<div class="column">
+      <!-- Coronavirus Data -->
+      <article class="panel is-info">
+        <p class="panel-heading">
+          Local COVID-19 report
+        </p>
+        <a class="panel-block">
+          <span class="panel-icon">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </span>
+          Arrival State: <p id=""></p>
+        </a>
+        <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fa fa-clipboard" aria-hidden="true"></i>
+            </span>
+            Confirmed Cases: <p id=""></p>
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fas fa-skull" aria-hidden="true"></i>
+            </span>
+            Deaths: <p id=""></p>
+          </a>
+          <a class="panel-block">
+            <span class="panel-icon">
+              <i class="fa fa-refresh" aria-hidden="true"></i>
+            </span>
+            Last Updated: <p id=""></p>
+          </a>
+      </article>
+      </div>
+      </div>
       
 
 
