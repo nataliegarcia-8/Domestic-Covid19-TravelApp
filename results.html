@@ -8,6 +8,7 @@
     <title>The Masked Wanderer</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/facemask.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="assets/script.js"></script>
    
@@ -15,8 +16,8 @@
 <body>
     <section class="section has-background-info">
         <div class="container has-text-centered">
-          <h1 class="title">
-            THE MASKED WANDERER
+          <h1 class="title is-1" style="font-family: 'Montserrat', sans-serif;">
+          MASKED WANDERER
           </h1>
           <p class="subtitle">
             Real Time Coronavirus Info + Cheapest Domestic Flights
@@ -24,8 +25,10 @@
         </div>
       </section>
 
+      <div class="columns mt-6 mr-4 ml-4">
+        <div class="column">
       <!-- Cheapest Flight -->
-      <article class="panel is-link">
+      <article class="panel is-info">
         <p class="panel-heading">
           Most Affordable Flight
         </p>
@@ -54,9 +57,10 @@
             Price: $ <p id="price"></p>
           </a>
       </article>
-
+        </div>
+<div class="column">
       <!-- Coronavirus Data -->
-      <article class="panel is-link">
+      <article class="panel is-info">
         <p class="panel-heading">
           Local COVID-19 report
         </p>
@@ -85,7 +89,8 @@
             Last Updated: <p id=""></p>
           </a>
       </article>
-
+      </div>
+      </div>
       
 
 
@@ -95,9 +100,5 @@
       </div>
     </div>
     <script src="assets/endpage.js"></script>
-<<<<<<< HEAD
-    
-=======
->>>>>>> d4da2f1f6a38d36d0c56fc5a3dba6e74f703fced
 </body>
 </html>
