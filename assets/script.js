@@ -1,14 +1,9 @@
-//DOM ELEMENTS
 
-
-// var arrCity= $("#arrivalCity").val();
-// var depCity= $("#departingCity").val();
-// var depDate= $("#departureDate").val();
 
 function enterdata() {
-    const arrCity = document.getElementById("arrivalCity").value;
-    const depCity = document.getElementById("departingCity").value;
-
+    const arrCity = document.getElementById("arrivalCity").value.toUpperCase();
+    const depCity = document.getElementById("departingCity").value.toUpperCase();
+    event.preventDefault();
     var settings = {
     "async": true,
     "crossDomain": true,
@@ -21,9 +16,10 @@ function enterdata() {
         }
     }
 
-    $.ajax(settings).done(function (response) {
-        localStorage.setItem("cheapestflight", JSON.stringify(response.data.LAX[0]));
 
+    $.ajax(settings).done(function (response) {
+        localStorage.setItem("cheapestflight", JSON.stringify(response.data[arrCity][0]));
+        
         return window.location.assign("results.html");
         
     });
