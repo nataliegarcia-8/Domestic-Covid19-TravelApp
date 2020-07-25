@@ -1,8 +1,9 @@
 
 
-function enterdata() {
+function enterdata(event) {
     const arrCity = document.getElementById("arrivalCity").value.toUpperCase();
     const depCity = document.getElementById("departingCity").value.toUpperCase();
+    event.preventDefault();
 
     var settings = {
     "async": true,
@@ -30,17 +31,17 @@ function enterdata() {
 
 //$("#search").on("click", function(event) {
 
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "https://covid-19-statistics.p.rapidapi.com/reports?&iso=USA&region_name=US&city_name=Atlanta&date=2020-04",
-    "method": "GET",
-    "headers": {
-        "x-rapidapi-host": "covid-19-statistics.p.rapidapi.com",
-        "x-rapidapi-key": "8144acd97dmsh3d8d17d414f0cc6p1178d1jsn267a11f3f771"
-    }
-}
+// var settings = {
+//     "async": true,
+//     "crossDomain": true,
+//     "url": "https://covid-19-statistics.p.rapidapi.com/reports?&iso=USA&region_name=US&city_name=Atlanta&date=2020-04",
+//     "method": "GET",
+//     "headers": {
+//         "x-rapidapi-host": "covid-19-statistics.p.rapidapi.com",
+//         "x-rapidapi-key": "8144acd97dmsh3d8d17d414f0cc6p1178d1jsn267a11f3f771"
+//     }
+// }
 
-$.ajax(settings).done(function (response) {
-    console.log(response);
-});
+// $.ajax(settings).done(function (response) {
+//     console.log(response);
+// });
