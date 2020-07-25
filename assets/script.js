@@ -15,6 +15,7 @@ function enterdata() {
     for (var i = 0; i < masterList.length; i++) {
         if (masterList[i].city.includes(departCity)) {
             var departCode = masterList[i].code
+            console.log(departCode)
         }
         if (masterList[i].city.includes(arrCity)) {
             var arrCode = masterList[i].code
