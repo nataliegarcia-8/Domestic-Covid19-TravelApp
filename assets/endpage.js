@@ -10,6 +10,17 @@ departure.innerHTML = flightData.departure_at;
 flightnumber.innerHTML = flightData.flight_number;
 price.innerHTML = flightData.price;
 
+var covidData = JSON.parse(localStorage.getItem("Covid-Stats"));
+var arrState = covidData.region.province;
+var confirmedCases = covidData.confirmed;
+var deaths = covidData.deaths;
+var date = covidData.date;
+console.log(arrState, confirmedCases, deaths, date)
+
+$("#arrival").text(arrState);
+$("#confirmed").text(confirmedCases);
+$("#deaths").text(deaths);
+$("#date").text(date);
 
 
-console.log(flightData.airline);
+// console.log(flightData.airline);
