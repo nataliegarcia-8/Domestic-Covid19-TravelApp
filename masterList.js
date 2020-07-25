@@ -89,12 +89,12 @@ var masterList = [
         "code": "BVT",
         "name": "Burlington International Airport"
     },
-    {
-        "city": "New York City",
-        "state": "New York",
-        "code": "LGA",
-        "name": "LaGuardia Airport"
-    },
+    // {
+    //     "city": "New York City",
+    //     "state": "New York",
+    //     "code": "LGA",
+    //     "name": "LaGuardia Airport"
+    // },
     {
         "city": "New York City",
         "state": "New York",
@@ -239,12 +239,12 @@ var masterList = [
         "code": "MDW",
         "name": "Chicago Midway International Airport"
     },
-    {
-        "city": "Chicago",
-        "state": "Illinois",
-        "code": "MDW",
-        "name": "Chicago Midway International Airport"
-    },
+    // {
+    //     "city": "Chicago",
+    //     "state": "Illinois",
+    //     "code": "MDW",
+    //     "name": "Chicago Midway International Airport"
+    // },
     {
         "city": "Jefferson City",
         "state": "Missouri",
@@ -453,7 +453,7 @@ var masterList = [
         "city": "San Diego",
         "state": "California",
         "code": "SAN",
-        "name": "San Diego International Airport. San Diego International Airport"
+        "name": "San Diego International Airport"
     },
     {
         "city": "San Francisco",

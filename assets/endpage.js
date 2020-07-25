@@ -21,6 +21,3 @@ $("#arrival").text(arrState);
 $("#confirmed").text(confirmedCases);
 $("#deaths").text(deaths);
 $("#date").text(date);
-
-
-// console.log(flightData.airline);
