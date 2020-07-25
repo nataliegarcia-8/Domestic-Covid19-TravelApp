@@ -1,32 +1,49 @@
 <!DOCTYPE HTML>
-<html lang="en" class="has-background-light">
+<html lang="en" style="background: url(./assets/sun-clouds.jpg)">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="assets/bulma.css">
-    <title>The Masked Wanderer</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/facemask.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="assets/script.js"></script>
-   
-</head>
-<body>
-    <section class="section has-background-info">
-        <div class="container has-text-centered">
-          <h1 class="title is-1 is-family-primary">
-          MASKED WANDERER
-          </h1>
-          <p class="subtitle">
-            Real Time Coronavirus Info + Cheapest Domestic Flights
-          </p>
-        </div>
-      </section>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="assets/bulma.css">
+  <title>The Masked Wanderer</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/facemask.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="assets/script.js"></script>
 
-      <div class="columns mt-5 mr-4 ml-4">
-        <div class="column">
+</head>
+<style>
+  html,
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body>footer {
+    margin-top: auto;
+  }
+
+  .panel {
+    background-color: rgb(255, 255, 255, 0.65);
+  }
+</style>
+
+<body>
+  <section class="section has-background-info">
+    <div class="container has-text-centered">
+      <h1 class="title is-1 is-family-primary">
+        MASKED WANDERER
+      </h1>
+      <p class="subtitle">
+        Real Time Coronavirus Info + Cheapest Domestic Flights
+      </p>
+    </div>
+  </section>
+
+  <main class="columns mt-5 mr-4 ml-4">
+    <div class="column">
       <!-- Cheapest Flight -->
       <article class="panel is-info">
         <p class="panel-heading  title is-4 mb-0">
@@ -34,31 +51,31 @@
         </p>
         <a class="panel-block pt-4">
           <span class="panel-icon">
-            <i class="fa fa-plane" ></i>
+            <i class="fa fa-plane"></i>
           </span>
           <p id="airline"></p>
         </a>
         <a class="panel-block pt-4">
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            <p id="departure"></p>
-          </a>
-          <a class="panel-block pt-4">
-            <span class="panel-icon">
-              <i class="fa fa-hashtag" aria-hidden="true"></i>
-            </span>
-            <p id="flightnumber"></p>
-          </a>
-          <a class="panel-block pt-4">
-            <span class="panel-icon">
-              <i class="fa fa-usd" aria-hidden="true"></i>
-            </span>
-            <p id="price"></p>
-          </a>
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          <p id="departure"></p>
+        </a>
+        <a class="panel-block pt-4">
+          <span class="panel-icon">
+            <i class="fa fa-hashtag" aria-hidden="true"></i>
+          </span>
+          <p id="flightnumber"></p>
+        </a>
+        <a class="panel-block pt-4">
+          <span class="panel-icon">
+            <i class="fa fa-usd" aria-hidden="true"></i>
+          </span>
+          <p id="price"></p>
+        </a>
       </article>
-        </div>
-<div class="column">
+    </div>
+    <div class="column">
       <!-- Coronavirus Data -->
       <article class="panel is-info">
         <p class="panel-heading title is-4 mb-0">
@@ -71,35 +88,41 @@
           <p id="arrival"></p>
         </a>
         <a class="panel-block pt-4">
-            <span class="panel-icon">
-              <i class="fa fa-clipboard" aria-hidden="true"></i>
-            </span>
+          <span class="panel-icon">
+            <i class="fa fa-clipboard" aria-hidden="true"></i>
+          </span>
           <p id="confirmed"></p>
-          </a>
-          <a class="panel-block pt-4">
-            <span class="panel-icon">
-              <i class="fas fa-skull" aria-hidden="true"></i>
-            </span>
+        </a>
+        <a class="panel-block pt-4">
+          <span class="panel-icon">
+            <i class="fas fa-skull" aria-hidden="true"></i>
+          </span>
           <p id="deaths"></p>
-          </a>
-          <a class="panel-block pt-4">
-            <span class="panel-icon">
-              <i class="fa fa-refresh" aria-hidden="true"></i>
-            </span>
+        </a>
+        <a class="panel-block pt-4">
+          <span class="panel-icon">
+            <i class="fa fa-refresh" aria-hidden="true"></i>
+          </span>
           <p id="date"></p>
-          </a>
+        </a>
       </article>
-      </div>
-      </div>
-      
-
-
-
-      </div>
-     
-      </div>
     </div>
-    <script src="masterList.js"></script>
-    <script src="assets/endpage.js"></script>
+  </main>
+    <div class="content has-text-centered">
+      <a class="button is-info is-rounded" href="./index.html">Go Back to Main Page</a>
+    </div>
+  <footer class="footer" style="background: url(./assets/sand.jpg); -webkit-mask-image:-webkit-gradient(linear, left bottom, left top,  from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));">
+    <!-- <ul> 
+      <li><strong>Contributors</strong></li>
+      <li>Matthew Stalzer</li>
+      <li>Natalie Garcia</li>
+      <li>Brian Abedi</li>
+      <li>Jacob Hoss</li>
+      </ul> -->
+  </footer>
+  <script src="masterList.js"></script>
+  <script src="assets/endpage.js"></script>
 </body>
+
 </html>

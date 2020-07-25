@@ -22,16 +22,16 @@
   <section class="section has-background-info">
     <div class="container has-text-centered">
       <h1 class="title is-1 is-family-primary">
-       MASKED WANDERER
+        MASKED WANDERER
       </h1>
       <p class="subtitle">
         Real Time Coronavirus Info + Cheapest Domestic Flights
       </p>
     </div>
   </section>
-  <div class="container pt-6">
+  <div class="container pt-6 mb-6">
     <form class="columns box is-centered pb-5 pt-2 level ml-2 mr-2">
-      <!-- <img class="column is-2 is-desktop" src="assets/taking_off.gif"> -->
+      <img class="column is-2 is-desktop" src="assets/taking_off.gif">
       <div class="field column is-4">
         <label class="label subtitle is-4 is-family-primary">Departure</label>
         <div class="control">
@@ -44,11 +44,15 @@
         <div class="control">
           <input class="input" type="text" id="arrivalCity" placeholder="e.g. Boston">
         </div>
-      </form>
+
+      </div>
+      <img class="column is-2 is-desktop" src="assets/touch_down.gif">
+    </form>
+
     <button style="position: absolute; bottom: -1rem; left: 50%; width: 6rem; margin-left: -3rem" onclick="enterdata()"
       id="search" class="button is-info is-rounded"><i class="fa fa-search mr-1"></i>Search</button>
   </div>
-  </div>
+
   <script src="masterList.js"></script>
   <script src="assets/script.js"></script>
 </body>
