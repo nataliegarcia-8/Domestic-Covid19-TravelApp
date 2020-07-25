@@ -1,14 +1,15 @@
-const airlineType= document.getElementById("airline");
-const departure= document.getElementById("departure");
-const flightnumber= document.getElementById("flightnumber");
-const price= document.getElementById("price");
+var flightData = JSON.parse(localStorage.getItem("cheapestflight")) || [];
+var airline = flightData.airline;
+var time  = flightData.departure_at;
+var flightNo = flightData.flight_number;
+var price = flightData.price;
 
-const flightData = JSON.parse(localStorage.getItem("cheapestflight")) || [];
+$("#airline").text("Airline: " + airline);
+$("#departure").text("Departure Time: " + time); 
+$("#flightnumber").text("Flight No. : " + airline + flightNo);
+$("#price").text("Price: " + price)
 
-airlineType.innerHTML = flightData.airline;
-departure.innerHTML = flightData.departure_at;
-flightnumber.innerHTML = flightData.flight_number;
-price.innerHTML = flightData.price;
+// --------------------------------------------------------------- \\ 
 
 var covidData = JSON.parse(localStorage.getItem("Covid-Stats"));
 var arrState = covidData.region.province;
@@ -17,7 +18,7 @@ var deaths = covidData.deaths;
 var date = covidData.date;
 console.log(arrState, confirmedCases, deaths, date)
 
-$("#arrival").text(arrState);
-$("#confirmed").text(confirmedCases);
-$("#deaths").text(deaths);
-$("#date").text(date);
+$("#arrival").text("Arrival State: " + arrState);
+$("#confirmed").text("Confirmed Cases: " + confirmedCases);
+$("#deaths").text("Deaths: " + deaths);
+$("#date").text("Last Updated: " + date);
