@@ -1,4 +1,5 @@
-var flightData = JSON.parse(localStorage.getItem("cheapestflight")) || [];
+var flightData = JSON.parse(localStorage.getItem("cheapestflight"));
+// || [];
 var airline = flightData.airline;
 var time  = flightData.departure_at;
 var flightNo = flightData.flight_number;
@@ -7,7 +8,7 @@ var price = flightData.price;
 $("#airline").text("Airline: " + airline);
 $("#departure").text("Departure Time: " + time); 
 $("#flightnumber").text("Flight No. : " + airline + flightNo);
-$("#price").text("Price: " + price)
+$("#price").text("Price: " + "$" + price)
 
 // --------------------------------------------------------------- \\ 
 

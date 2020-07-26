@@ -89,18 +89,18 @@ var masterList = [
         "code": "BVT",
         "name": "Burlington International Airport"
     },
-    // {
-    //     "city": "New York City",
-    //     "state": "New York",
-    //     "code": "LGA",
-    //     "name": "LaGuardia Airport"
-    // },
     {
         "city": "New York City",
         "state": "New York",
-        "code": "JFK",
-        "name": "John F. Kennedy International Airport"
+        "code": "LGA",
+        "name": "LaGuardia Airport"
     },
+    // {
+    //     "city": "New York City",
+    //     "state": "New York",
+    //     "code": "JFK",
+    //     "name": "John F. Kennedy International Airport"
+    // },
     {
         "city": "Albany",
         "state": "New York",
@@ -227,24 +227,18 @@ var masterList = [
         "code": "IND",
         "name": "Indianapolis International Airport"
     },
-    {
-        "city": "Chicago",
-        "state": "Illinois",
-        "code": "ORD",
-        "name": "O'Hare International Airport"
-    },
+    // {
+    //     "city": "Chicago",
+    //     "state": "Illinois",
+    //     "code": "ORD",
+    //     "name": "O'Hare International Airport"
+    // },
     {
         "city": "Chicago",
         "state": "Illinois",
         "code": "MDW",
         "name": "Chicago Midway International Airport"
     },
-    // {
-    //     "city": "Chicago",
-    //     "state": "Illinois",
-    //     "code": "MDW",
-    //     "name": "Chicago Midway International Airport"
-    // },
     {
         "city": "Jefferson City",
         "state": "Missouri",
@@ -284,7 +278,7 @@ var masterList = [
     {
         "city": "Detroit",
         "state": "Michigan",
-        "code": "DTW",
+        "code": "DTT",
         "name": "Detroit Metropolitan Wayne County Airport"
     },
     {
@@ -438,12 +432,6 @@ var masterList = [
         "name": "McCarran International Airport"
     },
     {
-        "city": "Las Vegas",
-        "state": "Nevada",
-        "code": "LAS",
-        "name": "McCarran International Airport"
-    },
-    {
         "city": "Los Angeles",
         "state": "California",
         "code": "LAX",
@@ -486,8 +474,3 @@ var masterList = [
         "name": "Kahului Airport"
     },
 ]
-// for (var i = 0; i < masterList.length; i++) {
-//     // if (masterList[i].city.includes("Atlanta")) {
-//     console.log(masterList[i].city)
-//     // }
-// }

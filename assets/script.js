@@ -20,15 +20,24 @@ function enterdata() {
 
         if (lower.includes(departCity)) {
             var departCode = masterList[i].code
+            console.log(departCode)
         }
         if (lower.includes(arrCity)) {
             var arrCode = masterList[i].code
-
+            console.log(arrCode)
         }
         if (lower.includes(arrCity)) {
             var covidState = masterList[i].state
             localStorage.setItem("covid-state", covidState)
         }
+        // if (lower.includes(departCity, arrCity,)){
+        //     var departCode = masterList[i].code
+        //     console.log(departCode)
+        //     var arrCode = masterList[i].code
+        //     console.log(arrCode)
+        //     var covidState = masterList[i].state
+        //     localStorage.setItem("covid-state", covidState)
+        // }
     };
     var flightAPI = {
         "async": true,
@@ -42,11 +51,13 @@ function enterdata() {
         }
     }
     $.ajax(flightAPI).done(function (response) {
+        console.log(response)
         var stringify = JSON.stringify(response.data)
         if (stringify === "{}") {
             return;
         }
         else {
+            console.log(response)
             localStorage.setItem("cheapestflight", JSON.stringify(response.data[arrCode][0]));
 
 
