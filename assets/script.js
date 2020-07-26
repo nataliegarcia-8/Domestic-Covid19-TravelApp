@@ -37,6 +37,7 @@ function enterdata() {
         }
     }
     $.ajax(flightAPI).done(function (response) {
+        console.log(response);
         localStorage.setItem("cheapestflight", JSON.stringify(response.data[arrCode][0]));
     });
     var covidAPI = {
