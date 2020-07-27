@@ -15,10 +15,15 @@ function enterdata() {
     for (var i = 0; i < masterList.length; i++) {
         if (masterList[i].city.includes(departCity)) {
             var departCode = masterList[i].code
-            console.log(departCode)
-        }
+            console.log(departCode)}
+            else { 
+                alert("wrong mf!!!")
+                return
+
+            }
         if (masterList[i].city.includes(arrCity)) {
             var arrCode = masterList[i].code
+          
         }
         if (masterList[i].city.includes(arrCity)) {
             var covidState = masterList[i].state
@@ -53,6 +58,6 @@ function enterdata() {
     $.ajax(covidAPI).done(function (response2) {
         console.log(response2);
         localStorage.setItem("Covid-Stats", JSON.stringify(response2.data[0]))
-        return window.location.assign("results.html")
+        // return window.location.assign("results.html")
     });
 }
