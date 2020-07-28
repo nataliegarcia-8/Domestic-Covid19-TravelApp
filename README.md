@@ -29,4 +29,4 @@ THEN I am provided with flight deals, coronavirus information, groupon deals, an
 
 
 
-![mainpage](assets/mainpage.png)
+![mainpage](assets/img/mainpage.png)
