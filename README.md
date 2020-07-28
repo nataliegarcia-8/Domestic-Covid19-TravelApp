@@ -27,6 +27,7 @@ THEN I am provided with flight deals, coronavirus information, groupon deals, an
 [COVID-19 API](https://rapidapi.com/astsiatsko/api/coronavirus-monitor-v2)
 
 
+https://nataliegarcia-8.github.io/Domestic-Covid19-TravelApp/
 
 
-![mainpage](assets/mainpage.png)
+![mainpage](assets/img/mainpage.png)
