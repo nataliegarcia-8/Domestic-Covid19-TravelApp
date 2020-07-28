@@ -1,6 +1,7 @@
 
 function enterdata() {
     event.preventDefault();
+    
     var startCity = $("#departingCity").val().trim()
 
     var endCity = $("#arrivalCity").val().trim()
