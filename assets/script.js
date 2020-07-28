@@ -51,7 +51,7 @@ function enterdata() {
         }
         else {
             console.log(response)
-            localStorage.setItem("cheapestflight", JSON.stringify(response.data[arrCode][1]));
+            localStorage.setItem("cheapestflight", JSON.stringify(response.data[arrCode][2]));
 
 
 
