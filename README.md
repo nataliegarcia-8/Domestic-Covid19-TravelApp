@@ -26,3 +26,7 @@ THEN I am provided with flight deals, coronavirus information, groupon deals, an
 
 [COVID-19 API](https://rapidapi.com/astsiatsko/api/coronavirus-monitor-v2)
 
+
+
+
+![mainpage](assets/mainpage.png)
