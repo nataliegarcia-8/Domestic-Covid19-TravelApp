@@ -19,14 +19,12 @@ function enterdata() {
     for (var i = 0; i < masterList.length; i++) {
         var lower = masterList[i].city.toLowerCase();
 
-        if (lower.includes(departCity)) {
+        if (lower === departCity) {
             var departCode = masterList[i].code
         }
-        if (lower.includes(arrCity)) {
+        if (lower === arrCity) {
             var arrCode = masterList[i].code
             console.log(arrCode)
-        }
-        if (lower.includes(arrCity)) {
             var covidState = masterList[i].state
             localStorage.setItem("covid-state", covidState)
         }
@@ -46,7 +44,7 @@ function enterdata() {
         // console.log(response)
         var stringify = JSON.stringify(response.data)
         if (stringify === "{}") {
-            
+            $("#search").removeClass("is-loading");
             return;
         }
         else {
@@ -58,7 +56,7 @@ function enterdata() {
             var covidAPI = {
                 "async": true,
                 "crossDomain": true,
-                "url": "https://covid-19-statistics.p.rapidapi.com/reports?region_province=" + covidState + "&date=2020-07-14",
+                "url": "https://covid-19-statistics.p.rapidapi.com/reports?region_province=" + covidState + "&date=2020-07-26",
                 "method": "GET",
                 "headers": {
                     "x-rapidapi-host": "covid-19-statistics.p.rapidapi.com",
