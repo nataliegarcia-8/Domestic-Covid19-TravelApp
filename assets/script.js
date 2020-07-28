@@ -24,7 +24,7 @@ function enterdata() {
         }
         if (lower.includes(arrCity)) {
             var arrCode = masterList[i].code
-
+            console.log(arrCode)
         }
         if (lower.includes(arrCity)) {
             var covidState = masterList[i].state
@@ -43,18 +43,22 @@ function enterdata() {
         }
     }
     $.ajax(flightAPI).done(function (response) {
+        // console.log(response)
         var stringify = JSON.stringify(response.data)
         if (stringify === "{}") {
+            
             return;
         }
         else {
-            localStorage.setItem("cheapestflight", JSON.stringify(response.data[arrCode][0]));
+            console.log(response)
+            localStorage.setItem("cheapestflight", JSON.stringify(response.data[arrCode][1]));
+
 
 
             var covidAPI = {
                 "async": true,
                 "crossDomain": true,
-                "url": "https://covid-19-statistics.p.rapidapi.com/reports?region_province=" + covidState + "&date=2020-07-01",
+                "url": "https://covid-19-statistics.p.rapidapi.com/reports?region_province=" + covidState + "&date=2020-07-14",
                 "method": "GET",
                 "headers": {
                     "x-rapidapi-host": "covid-19-statistics.p.rapidapi.com",
@@ -67,6 +71,6 @@ function enterdata() {
                 localStorage.setItem("Covid-Stats", JSON.stringify(response2.data[0]))
                 return window.location.assign("results.html")
             });
-        };
+        }
     })
 }
