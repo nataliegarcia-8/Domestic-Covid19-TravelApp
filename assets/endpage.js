@@ -1,13 +1,21 @@
 var flightData = JSON.parse(localStorage.getItem("cheapestflight")) || [];
-var airline = flightData.airline;
-var time  = flightData.departure_at;
+
+var airlineCode = flightData.airline;
+var time = flightData.departure_at;
 var flightNo = flightData.flight_number;
 var price = flightData.price;
 
-$("#airline").text("Airline: " + airline);
-$("#departure").text("Departure Time: " + time); 
-$("#flightnumber").text("Flight No. : " + airline + flightNo);
-$("#price").text("Price: " + price)
+for (var i = 0; i < airlines.length; i++) {
+    if (airlineCode === airlines[i].code) {
+        var airlineName = airlines[i].name
+        $("#airline").text("Airline: " + airlineName);
+        console.log(airlineCode , airlines[i].code)
+
+    }
+}
+    $("#departure").text("Departure Time: " + time);
+    $("#flightnumber").text("Flight No. : " + airlineCode + flightNo);
+    $("#price").text("Price: " + "$" + price)
 
 // --------------------------------------------------------------- \\ 
 
