@@ -29,10 +29,17 @@ else if (hours > 12) {
     $("#departure").text("Departure Time: " + time.slice(6, 7) + "/" + time.slice(8, 10) 
     + "/" + time.slice(0, 4) + " " + hours + time.slice(13, 16) + " " + "P.M.");
 }
-else if (hour == 0) {
+else if (hours == 0) {
     hours = 12;
-    console.log(hours);
+    $("#departure").text("Departure Time: " + time.slice(6, 7) + "/" + time.slice(8, 10) 
+    + "/" + time.slice(0, 4) + " " + hours + time.slice(13, 16) + " " + "A.M.");
 }
+else if (hours == 12) {
+    hours = 12;
+    $("#departure").text("Departure Time: " + time.slice(6, 7) + "/" + time.slice(8, 10) 
+    + "/" + time.slice(0, 4) + " " + hours + time.slice(13, 16) + " " + "P.M.");
+}
+
 $("#flightnumber").text("Flight No. : " + airlineCode + flightNo);
     $("#price").text("Price: " + "$" + price)
 
