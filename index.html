@@ -4,17 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="assets/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/bulma.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <title>The Masked Wanderer</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/facemask.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/facemask.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
 <style>
   html {
-    background: url(./assets/beach_202566.jpg);
+    background: url(./assets/img/beach_cropped.jpg);
   }
 </style>
 
@@ -31,7 +31,7 @@
   </section>
   <div class="container pt-6 mb-6">
     <form class="columns box is-centered pb-5 pt-2 level ml-2 mr-2">
-      <img class="column is-2 is-desktop" src="assets/taking_off.gif">
+      <img class="column is-2 is-desktop" src="assets//img/taking_off.gif">
       <div class="field column is-4">
         <label class="label subtitle is-4 is-family-primary">Departure</label>
         <div class="control">
@@ -44,17 +44,16 @@
         <div class="control">
           <input class="input" type="text" id="arrivalCity" placeholder="e.g. Boston">
         </div>
-
       </div>
-      <img class="column is-2 is-desktop" src="assets/touch_down.gif">
-    </form>
-
+      <img class="column is-2 is-desktop" src="assets//img/touch_down.gif">
+      </form>
     <button style="position: absolute; bottom: -1rem; left: 50%; width: 6rem; margin-left: -3rem" onclick="enterdata()"
       id="search" class="button is-info is-rounded"><i class="fa fa-search mr-1"></i>Search</button>
   </div>
   <script src="masterList.js"></script>
   <script src="assets/script.js"></script>
 </body>
+<script src="assets/airlines.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 <script src="assets/script.js"></script>

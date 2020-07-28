@@ -29,12 +29,12 @@ var masterList = [
         "code": "DCA",
         "name": "Ronald Reagan Washington National Airport"
     },
-    {
-        "city": "Washington D.C.",
-        "state": "-",
-        "code": "IAD",
-        "name": "Washington Dulles International Airport "
-    },
+    // {
+    //     "city": "Washington D.C.",
+    //     "state": "-",
+    //     "code": "IAD",
+    //     "name": "Washington Dulles International Airport "
+    // },
     {
         "city": "Baltimore",
         "state": "Maryland",
@@ -222,18 +222,6 @@ var masterList = [
         "name": "Indianapolis International Airport"
     },
     {
-        "city": "Indianapolis",
-        "state": "Indiana",
-        "code": "IND",
-        "name": "Indianapolis International Airport"
-    },
-    // {
-    //     "city": "Chicago",
-    //     "state": "Illinois",
-    //     "code": "ORD",
-    //     "name": "O'Hare International Airport"
-    // },
-    {
         "city": "Chicago",
         "state": "Illinois",
         "code": "MDW",
@@ -246,13 +234,7 @@ var masterList = [
         "name": "Jefferson City Memorial Airport"
     },
     {
-        "city": "Little City",
-        "state": "Arkansas",
-        "code": "LIT",
-        "name": "Bill and Hillary Clinton National Airport"
-    },
-    {
-        "city": "Little City",
+        "city": "Little Rock",
         "state": "Arkansas",
         "code": "LIT",
         "name": "Bill and Hillary Clinton National Airport"
@@ -419,12 +401,12 @@ var masterList = [
         "code": "SLE",
         "name": "Salem Municipal Airport"
     },
-    {
-        "city": "Portland",
-        "state": "Oregon",
-        "code": "PDX",
-        "name": "Portland International Airport"
-    },
+    // {
+    //     "city": "Portland",
+    //     "state": "Oregon",
+    //     "code": "PDX",
+    //     "name": "Portland International Airport"
+    // },
     {
         "city": "Las Vegas",
         "state": "Nevada",
