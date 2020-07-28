@@ -1,6 +1,7 @@
 
 function enterdata() {
     event.preventDefault();
+    $("#search").addClass("is-loading");
     var startCity = $("#departingCity").val().trim()
 
     var endCity = $("#arrivalCity").val().trim()
@@ -20,7 +21,6 @@ function enterdata() {
 
         if (lower.includes(departCity)) {
             var departCode = masterList[i].code
-            console.log(departCode)
         }
         if (lower.includes(arrCity)) {
             var arrCode = masterList[i].code
