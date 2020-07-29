@@ -46,13 +46,20 @@ $("#flightnumber").text("Flight No. : " + airlineCode + flightNo);
 // --------------------------------------------------------------- \\ 
 
 var covidData = JSON.parse(localStorage.getItem("Covid-Stats"));
+var covidData2 = JSON.parse(localStorage.getItem("Covid-Stats-2"));
 var arrState = covidData.region.province;
-var confirmedCases = covidData.confirmed;
-var deaths = covidData.deaths;
+var confirmedCases1 = covidData.confirmed;
+var confirmedCases2 = covidData2.confirmed;
+var newCases = confirmedCases1 - confirmedCases2
+console.log(confirmedCases1, confirmedCases2)
+var deaths1 = covidData.deaths;
+var deaths2 = covidData2.deaths;
+var newDeaths = deaths1 - deaths2
+console.log(deaths1 , deaths2)
 var date = covidData.date;
-console.log(arrState, confirmedCases, deaths, date)
+// console.log(arrState, confirmedCases, deaths, date)
 
 $("#arrival").text("Arrival State: " + arrState);
-$("#confirmed").text("Confirmed Cases: " + confirmedCases.toLocaleString());
-$("#deaths").text("Deaths: " + deaths.toLocaleString());
+$("#confirmed").text("Confirmed Cases: " + newCases.toLocaleString());
+$("#deaths").text("Deaths: " + newDeaths.toLocaleString());
 $("#date").text("Last Updated: " + date);
