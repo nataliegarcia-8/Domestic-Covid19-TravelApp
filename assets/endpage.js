@@ -57,9 +57,9 @@ var deaths2 = covidData2.deaths;
 var newDeaths = deaths1 - deaths2
 console.log(deaths1 , deaths2)
 var date = covidData.date;
-// console.log(arrState, confirmedCases, deaths, date)
 
 $("#arrival").text("Arrival State: " + arrState);
 $("#confirmed").text("Confirmed Cases: " + newCases.toLocaleString());
 $("#deaths").text("Deaths: " + newDeaths.toLocaleString());
-$("#date").text("Last Updated: " + date);
+$("#date").text("Last Updated: " + date.slice(6, 7) + "/" + date.slice(8, 10) 
++ "/" + date.slice(0, 4));

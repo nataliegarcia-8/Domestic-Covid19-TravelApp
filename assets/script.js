@@ -49,6 +49,9 @@ function enterdata() {
         if (stringify === "{}") {
             $("#search").removeClass("is-loading");
             $("#popUp").text("We cannot provide flight details between these cities.")
+            setTimeout(function(){
+                $("#popUp").fadeOut(1500);
+            } , 2000)
             return;
         }
         else {
@@ -95,6 +98,9 @@ function enterdata() {
         if (error) {
             $("#search").removeClass("is-loading");
             $("#popUp").text("We did not recognize these cities. Try again.")
+            setTimeout(function(){
+                $("#popUp").fadeOut(1500);
+            } , 2000)
         }
     })
 }
