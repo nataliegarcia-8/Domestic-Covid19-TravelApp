@@ -48,7 +48,8 @@ function enterdata() {
 
         if (stringify === "{}") {
             $("#search").removeClass("is-loading");
-            $("#popUp").text("We cannot provide flight details between these cities.")
+            var popUp1 = $("#popUp").text("We cannot provide flight details between these cities.")
+            popUp1.show();
             setTimeout(function(){
                 $("#popUp").fadeOut(1500);
             } , 2000)
@@ -97,7 +98,8 @@ function enterdata() {
     }).catch(function (error) {
         if (error) {
             $("#search").removeClass("is-loading");
-            $("#popUp").text("We did not recognize these cities. Try again.")
+            var popUp2 = $("#popUp").text("We did not recognize these cities. Try again.")
+            popUp2.show();
             setTimeout(function(){
                 $("#popUp").fadeOut(1500);
             } , 2000)
