@@ -53,6 +53,7 @@ var date = covidData.date;
 console.log(arrState, confirmedCases, deaths, date)
 
 $("#arrival").text("Arrival State: " + arrState);
-$("#confirmed").text("Confirmed Cases: " + confirmedCases.toLocaleString());
-$("#deaths").text("Deaths: " + deaths.toLocaleString());
-$("#date").text("Last Updated: " + date);
+$("#confirmed").text("Confirmed Cases: " + confirmedCases);
+$("#deaths").text("Deaths: " + deaths);
+$("#date").text("Last Updated: " + date.slice(6, 7) + "/" + date.slice(8, 10) 
++ "/" + date.slice(0, 4));
