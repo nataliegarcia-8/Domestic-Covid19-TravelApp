@@ -13,7 +13,11 @@ function enterdata() {
 
     if (!arrCity || !departCity) {
         $("#search").removeClass("is-loading");
-        $("#popUp").text("We did not recognize these cities. Try again.")
+        var noCities = $("#popUp").text("We did not recognize these cities. Try again.")
+        noCities.show();
+        setTimeout(function(){
+            $("#popUp").fadeOut(1500);
+        } , 2000)
         return;
     }
 
